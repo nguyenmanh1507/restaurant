@@ -1,0 +1,34 @@
+.top-bar-section ul li {
+	background-color: transparent;
+}
+
+.top-bar-section ul li > a {
+	font-weight: bold;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button),
+.top-bar-section li:not(.has-form) a:not(.button) {
+	@include bp(lg) {
+		padding-top: 2.9375rem;
+		transition: box-shadow .2s ease-in;
+
+		&:hover {
+			box-shadow: inset 0 3px 0 rgba($white, .7);
+		}
+	}
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	@include bp(lg) { 
+		box-shadow: inset 0 3px 0 rgba($white, .7);
+	}
+}
+
+.top-bar-section a > .fa {
+	color: $primary-color;
+	transition: all .2s ease-in;
+	
+	&:hover {
+		color: $white;
+	}
+}

@@ -1,0 +1,11 @@
+// Jumbotron Headline
+.cta-heading {
+	color: $white;
+	font-size: 5.625rem;
+	font-family: $font-family-special;
+
+	@include bp(lg) {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
