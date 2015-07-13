@@ -13,7 +13,8 @@ var app = (function(document, $) {
 			// Custom JS place here
 			
 			// Datepicker
-			$('#date').datepicker();
+			$('#date').datepicker({
+			});
 
 		};
 	return {
