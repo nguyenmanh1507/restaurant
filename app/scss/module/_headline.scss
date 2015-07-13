@@ -13,3 +13,16 @@
 		margin-left: auto;
 	}
 }
+
+// Headline decoration
+.deco-heading {
+	font-size: 2.25rem;
+	font-family: $font-family-special;
+	text-align: center;
+	padding-bottom: 0.94em;
+
+	&--a {
+		background: url('../images/divider.png') no-repeat center bottom;
+		color: $primary-color;
+	}
+}
