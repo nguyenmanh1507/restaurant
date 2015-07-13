@@ -1,6 +1,7 @@
 .site-jumbotron {
 	height: 100%;
-	background: url('../images/jumbotron.jpg') no-repeat left top;
+	background-image: linear-gradient(to bottom, rgba($black, 0.7), transparent 10%), url('../images/jumbotron.jpg');
+	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
 
