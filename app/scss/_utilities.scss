@@ -2,3 +2,25 @@
 .section-padding {
 	padding: 4.375rem 0;
 }
+
+// Div has BG
+.div-has-bg {
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 6.25rem 0;
+
+	&--a {
+		background-image: url('../images/material-bg.jpg');
+	}
+
+	&--b {
+		background-image: url('../images/review-bg.jpg');
+	}
+}
+
+// Black box
+.black-box {
+	background-color: rgba(black, 0.7);
+	padding: 5em;
+	text-align: center;
+}

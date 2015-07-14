@@ -1,0 +1,52 @@
+.r-form {
+	margin-top: 20px;
+
+	&__label {
+		color: $primary-color;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	input.r-form__input,
+	select.r-form__input {
+		box-shadow: none;
+		border-color: #c8c6c6;
+
+		&:hover,
+		&:focus {
+			border-color: $primary-color;
+		}
+	}
+
+	&__submit {
+		width: 200px;
+		padding: 10px 0;
+		margin: 15px auto 0;
+		display: block;
+	}
+}
+
+// Placeholder
+::-webkit-input-placeholder {
+	color: #7c7c7c;
+	font-size: 1em;
+	font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #7c7c7c;  
+  font-size: 1em;
+  font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #7c7c7c;  
+  font-size: 1em;
+  font-style: italic;
+}
+
+:-ms-input-placeholder {  
+  color: #7c7c7c;  
+  font-size: 1em;
+  font-style: italic;
+}

@@ -1,0 +1,39 @@
+.food {
+	padding: 10px;
+	margin-bottom: 1.125rem;
+
+	.food__name, .food__price {
+		font-size: 1.3125rem;
+		font-family: $font-family-special;
+		color: $primary-color;
+	}
+
+	.food__price {
+		float: right;
+	}
+
+	.food__description {
+		margin-bottom: 0;
+	}
+
+	&--special {
+		position: relative;
+		border: 1px solid rgba($primary-color, 0.5);
+
+		.food__label {
+			background-color: $primary-color;
+			color: $white;
+			padding: 0 10px;
+			font-size: 0.875rem;
+			position: absolute;
+			right: 0;
+			bottom: 100%;
+		}
+	}
+}
+
+.food-wrap {
+	border-bottom: 1px solid rgba($primary-color, 0.5);
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}

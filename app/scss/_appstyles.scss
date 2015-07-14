@@ -13,8 +13,15 @@
 @import 'layout/header';
 @import 'layout/jumbotron';
 @import 'layout/chef';
+@import 'layout/material';
+@import 'layout/menu';
+@import 'layout/review';
+@import 'layout/reservation';
+@import 'layout/footer';
 
 // Module
 @import 'module/navigation';
 @import 'module/headline';
 @import 'module/button';
+@import 'module/food';
+@import 'module/r-form';

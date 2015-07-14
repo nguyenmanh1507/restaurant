@@ -1,0 +1,28 @@
+.reviews {
+
+	.guest-review {
+		border: none;
+		margin: 0;
+	}
+
+	p {
+		color: $white;
+		font-family: $font-family-serif;
+		font-size: 1.5625rem;
+		font-weight: bold;
+		line-height: 1.8;
+
+		&:before {
+			color: #767272;
+			content: '\f10d';
+			font-family: 'fontAwesome';
+			margin-right: 10px;
+		}
+	}
+
+	cite {
+		color: $white;
+		font-style: normal;
+		font-size: 1.125rem;
+	}
+}

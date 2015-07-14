@@ -1,0 +1,35 @@
+.site-footer {
+	background-color: #191919;
+	padding: 3.75em 0;
+
+	.footer__para {
+		color: $white;
+		text-align: center;
+		font-weight: 300;
+
+		span {
+			font-weight: 700;
+		}
+	}
+
+	.footer__list {
+		list-style: none;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			margin: 0 5px 5px;
+
+			a {
+				color: $white;
+				transition: all 0.2s ease-in;
+
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}

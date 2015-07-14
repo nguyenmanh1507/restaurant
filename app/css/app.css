@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:700,400);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -6115,7 +6115,7 @@ html, body {
 
 body {
   background: url('../images/logo_x_pattern.png');
-  background-color: black; }
+  background-attachment: fixed; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0; }
@@ -6125,6 +6125,20 @@ p {
 
 .section-padding {
   padding: 4.375rem 0; }
+
+.div-has-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6.25rem 0; }
+  .div-has-bg--a {
+    background-image: url('../images/material-bg.jpg'); }
+  .div-has-bg--b {
+    background-image: url('../images/review-bg.jpg'); }
+
+.black-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5em;
+  text-align: center; }
 
 .site-header {
   position: fixed;
@@ -6138,9 +6152,11 @@ p {
 
 .site-jumbotron {
   height: 100%;
-  background-image: linear-gradient(to bottom, rgba(76, 76, 76, 0.7), transparent 10%), url('../images/jumbotron.jpg');
+  background-color: #888888;
+  background-image: linear-gradient(to bottom, rgba(76, 76, 76, 0.7), transparent 10%), url('../images/onion.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: multiply;
   text-align: center; }
   .site-jumbotron .cta-section-wrap {
     position: relative;
@@ -6150,7 +6166,77 @@ p {
   text-align: center; }
   .chef-info p {
     width: 75%;
-    margin: auto; }
+    margin: 0 auto 3.13em; }
+  .chef-info img {
+    border-radius: 50%;
+    height: 128px;
+    width: 128px; }
+
+.food-materials p {
+  color: #FFFFFF;
+  margin-bottom: 4.06em; }
+.food-materials .materials-list {
+  list-style: none; }
+  .food-materials .materials-list li {
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid rgba(76, 76, 76, 0.5);
+    margin-right: 1.25em; }
+    .food-materials .materials-list li:last-child {
+      margin-right: 0; }
+    .food-materials .materials-list li img {
+      border-radius: 50%; }
+
+.menu-detail {
+  margin-bottom: 3.75rem; }
+  .menu-detail:last-child {
+    margin-bottom: 0; }
+
+.reviews .guest-review {
+  border: none;
+  margin: 0; }
+.reviews p {
+  color: #FFFFFF;
+  font-family: 'Gentium Book Basic', Cambria, "Times New Roman", Times, serif;
+  font-size: 1.5625rem;
+  font-weight: bold;
+  line-height: 1.8; }
+  .reviews p:before {
+    color: #767272;
+    content: '\f10d';
+    font-family: 'fontAwesome';
+    margin-right: 10px; }
+.reviews cite {
+  color: #FFFFFF;
+  font-style: normal;
+  font-size: 1.125rem; }
+
+.reservation p {
+  text-align: center;
+  margin-bottom: 10px; }
+
+.site-footer {
+  background-color: #191919;
+  padding: 3.75em 0; }
+  .site-footer .footer__para {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 300; }
+    .site-footer .footer__para span {
+      font-weight: 700; }
+  .site-footer .footer__list {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+    .site-footer .footer__list li {
+      display: inline-block;
+      margin: 0 5px 5px; }
+      .site-footer .footer__list li a {
+        color: #FFFFFF;
+        transition: all 0.2s ease-in; }
+        .site-footer .footer__list li a:hover {
+          color: #cc9900; }
 
 .top-bar-section ul li {
   background-color: transparent; }
@@ -6199,10 +6285,18 @@ p {
   font-size: 2.25rem;
   font-family: 'yeseva_oneregular', 'Gentium Book Basic', serif;
   text-align: center;
-  padding-bottom: 0.94em; }
+  padding-bottom: 0.94em;
+  margin-bottom: 0.83em; }
   .deco-heading--a {
     background: url('../images/divider.png') no-repeat center bottom;
     color: #cc9900; }
+  .deco-heading--b {
+    background: url('../images/divider-white.png') no-repeat center bottom;
+    color: #FFFFFF; }
+  .deco-heading--small {
+    font-size: 1.3125rem;
+    background-size: 50%;
+    padding-bottom: 1.67em; }
 
 .button-cta {
   text-transform: uppercase;
@@ -6223,3 +6317,70 @@ p {
   .button-cta--b:hover {
     background-color: #FFFFFF;
     color: #4c4c4c; }
+
+.food {
+  padding: 10px;
+  margin-bottom: 1.125rem; }
+  .food .food__name, .food .food__price {
+    font-size: 1.3125rem;
+    font-family: 'yeseva_oneregular', 'Gentium Book Basic', serif;
+    color: #cc9900; }
+  .food .food__price {
+    float: right; }
+  .food .food__description {
+    margin-bottom: 0; }
+  .food--special {
+    position: relative;
+    border: 1px solid rgba(204, 153, 0, 0.5); }
+    .food--special .food__label {
+      background-color: #cc9900;
+      color: #FFFFFF;
+      padding: 0 10px;
+      font-size: 0.875rem;
+      position: absolute;
+      right: 0;
+      bottom: 100%; }
+
+.food-wrap {
+  border-bottom: 1px solid rgba(204, 153, 0, 0.5);
+  padding-bottom: 5px;
+  margin-bottom: 5px; }
+
+.r-form {
+  margin-top: 20px; }
+  .r-form__label {
+    color: #cc9900;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .r-form input.r-form__input, .r-form select.r-form__input {
+    box-shadow: none;
+    border-color: #c8c6c6; }
+    .r-form input.r-form__input:hover, .r-form input.r-form__input:focus, .r-form select.r-form__input:hover, .r-form select.r-form__input:focus {
+      border-color: #cc9900; }
+  .r-form__submit {
+    width: 200px;
+    padding: 10px 0;
+    margin: 15px auto 0;
+    display: block; }
+
+::-webkit-input-placeholder {
+  color: #7c7c7c;
+  font-size: 1em;
+  font-style: italic; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #7c7c7c;
+  font-size: 1em;
+  font-style: italic; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #7c7c7c;
+  font-size: 1em;
+  font-style: italic; }
+
+:-ms-input-placeholder {
+  color: #7c7c7c;
+  font-size: 1em;
+  font-style: italic; }
