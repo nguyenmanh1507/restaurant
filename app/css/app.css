@@ -6165,14 +6165,21 @@ p {
     .top-bar-section li.active:not(.has-form) a:not(.button):hover, .top-bar-section li:not(.has-form) a:not(.button):hover {
       box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.7); } }
 
+.top-bar-section li:not(.has-form):nth-last-child(-n+3) a:not(.button) {
+  box-shadow: none;
+  color: #cc9900;
+  transition: all .2s ease-in; }
+  .top-bar-section li:not(.has-form):nth-last-child(-n+3) a:not(.button):hover {
+    color: #FFFFFF; }
+
 @media only screen and (min-width: 64.063em) {
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.7); } }
 
-.top-bar-section a > .fa {
+.top-bar-section a {
   color: #cc9900;
   transition: all .2s ease-in; }
-  .top-bar-section a > .fa:hover {
+  .top-bar-section a:hover {
     color: #FFFFFF; }
 
 .cta-heading {

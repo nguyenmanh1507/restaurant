@@ -18,13 +18,23 @@
 	}
 }
 
+.top-bar-section li:not(.has-form):nth-last-child(-n+3) a:not(.button) {
+	box-shadow: none;
+	color: $primary-color;
+	transition: all .2s ease-in;
+
+	&:hover {
+		color: $white;
+	}
+}
+
 .top-bar-section li.active:not(.has-form) a:not(.button) {
 	@include bp(lg) { 
 		box-shadow: inset 0 3px 0 rgba($white, .7);
 	}
 }
 
-.top-bar-section a > .fa {
+.top-bar-section a {
 	color: $primary-color;
 	transition: all .2s ease-in;
 	
