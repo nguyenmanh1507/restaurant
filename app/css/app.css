@@ -6134,6 +6134,9 @@ p {
   .div-has-bg--b {
     background-image: url('../images/review-bg.jpg'); }
 
+.div-has-pattern {
+  background: url('../images/symphony.png'); }
+
 .black-box {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 5em;
@@ -6170,6 +6173,21 @@ p {
   .site-jumbotron .cta-section-wrap {
     position: relative;
     top: 30%; }
+
+.site-jumbotron.site-jumbotron--video {
+  background: rgba(0, 0, 0, 0.6); }
+
+video#bgvid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(images/onion.jpg) no-repeat;
+  background-size: cover; }
 
 .chef-info {
   text-align: center; }
