@@ -6129,6 +6129,10 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 6.25rem 0; }
+  .div-has-bg--a {
+    background-image: url('../images/material-bg.jpg'); }
+  .div-has-bg--b {
+    background-image: url('../images/review-bg.jpg'); }
 
 .black-box {
   background-color: rgba(0, 0, 0, 0.7);
