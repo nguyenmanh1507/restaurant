@@ -40,6 +40,14 @@ var app = (function(document, $) {
 				allowTimes: allowTimes
 			});
 
+			// Headroom
+			var header = document.querySelector('.site-header');
+			var headroom = new Headroom(header);
+
+			headroom.init({
+				offset: 300
+			});
+
 		};
 	return {
 		init: _init
