@@ -46,6 +46,12 @@ var app = (function(document, $) {
 
 			headroom.init();
 
+			// Animate signature
+			new Vivus('signature', {
+			  type: 'oneByOne', 
+			  duration: 200
+			});
+
 		};
 	return {
 		init: _init
