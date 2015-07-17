@@ -59,7 +59,7 @@ var app = (function(document, $) {
 			});
 
 			// Customize scrollpane
-			$('.scroll-pane').jScrollPane();
+			// $('.scroll-pane').jScrollPane();
 
 		};
 	return {
