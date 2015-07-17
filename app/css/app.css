@@ -368,6 +368,8 @@ html {
   box-sizing: border-box; }
 
 *, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
 html, body {
@@ -1231,8 +1233,7 @@ button, .button {
   background-color: #cc9900;
   border-color: #a37a00;
   color: #FFFFFF;
-  -webkit-transition: background-color 300ms ease-out;
-          transition: background-color 300ms ease-out; }
+  transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
     background-color: #a37a00; }
   button:hover, button:focus, .button:hover, .button:focus {
@@ -1436,7 +1437,9 @@ button::-moz-focus-inner {
     left: 50%;
     top: 50%;
     -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
     -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
     max-height: 100%;
     max-width: 100%; }
@@ -1922,8 +1925,13 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   margin: 0 0 1rem 0;
   padding: 0.5rem;
   width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: border-color 0.15s linear, background 0.15s linear;
+  -moz-transition: border-color 0.15s linear, background 0.15s linear;
+  -ms-transition: border-color 0.15s linear, background 0.15s linear;
+  -o-transition: border-color 0.15s linear, background 0.15s linear;
   transition: border-color 0.15s linear, background 0.15s linear; }
   input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus {
     background: #fafafa;
@@ -2494,8 +2502,7 @@ meta.foundation-mq-topbar {
   left: 0;
   position: relative;
   width: auto;
-  -webkit-transition: left 300ms ease-out;
-          transition: left 300ms ease-out; }
+  transition: left 300ms ease-out; }
   .top-bar-section ul {
     display: block;
     font-size: 16px;
@@ -2733,8 +2740,7 @@ meta.foundation-mq-topbar {
     margin: 0 auto;
     max-width: 73.125rem; }
   .top-bar-section {
-    -webkit-transition: none 0 0;
-            transition: none 0 0;
+    transition: none 0 0;
     left: 0 !important; }
     .top-bar-section ul {
       display: inline;
@@ -3626,21 +3632,16 @@ p {
   top: 0;
   width: 100%;
   z-index: 999;
-  -webkit-transition: all 0.2s ease-in;
-          transition: all 0.2s ease-in; }
+  transition: all 0.2s ease-in; }
 
 .site-logo {
   margin-top: 0.5rem; }
 
 .headroom--pinned {
-  -webkit-transform: translateY(0%);
-      -ms-transform: translateY(0%);
-          transform: translateY(0%); }
+  transform: translateY(0%); }
 
 .headroom--unpinned {
-  -webkit-transform: translateY(-100%);
-      -ms-transform: translateY(-100%);
-          transform: translateY(-100%); }
+  transform: translateY(-100%); }
 
 .headroom--not-top.headroom--pinned {
   background-color: black; }
@@ -3649,7 +3650,6 @@ p {
   min-height: 43.75rem;
   height: 100%;
   background-color: #888888;
-  background-image: -webkit-linear-gradient(top, rgba(76, 76, 76, 0.7), transparent 10%), url('../images/onion.jpg');
   background-image: linear-gradient(to bottom, rgba(76, 76, 76, 0.7), transparent 10%), url('../images/onion.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -3696,8 +3696,8 @@ video#bgvid {
 #signature {
   position: absolute;
   width: 300px;
-  height: 411px;
-  top: -53px;
+  height: 161px;
+  top: 80px;
   left: 60%;
   margin-left: -150px; }
   @media only screen and (max-width: 25em) {
@@ -3775,8 +3775,7 @@ video#bgvid {
       margin: 0 5px 5px; }
       .site-footer .footer__list li a {
         color: #FFFFFF;
-        -webkit-transition: all 0.2s ease-in;
-                transition: all 0.2s ease-in; }
+        transition: all 0.2s ease-in; }
         .site-footer .footer__list li a:hover {
           color: #cc9900; }
 
@@ -3789,16 +3788,14 @@ video#bgvid {
 @media only screen and (min-width: 64.063em) {
   .top-bar-section li.active:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.button) {
     padding-top: 2.9375rem;
-    -webkit-transition: box-shadow .2s ease-in;
-            transition: box-shadow .2s ease-in; }
+    transition: box-shadow .2s ease-in; }
     .top-bar-section li.active:not(.has-form) a:not(.button):hover, .top-bar-section li:not(.has-form) a:not(.button):hover {
       box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.7); } }
 
 .top-bar-section li:not(.has-form):nth-last-child(-n+3) a:not(.button) {
   box-shadow: none;
   color: #cc9900;
-  -webkit-transition: all .2s ease-in;
-          transition: all .2s ease-in; }
+  transition: all .2s ease-in; }
   .top-bar-section li:not(.has-form):nth-last-child(-n+3) a:not(.button):hover {
     color: #FFFFFF; }
 
@@ -3808,8 +3805,7 @@ video#bgvid {
 
 .top-bar-section a {
   color: #cc9900;
-  -webkit-transition: all .2s ease-in;
-          transition: all .2s ease-in; }
+  transition: all .2s ease-in; }
   .top-bar-section a:hover {
     color: #FFFFFF; }
 
@@ -3877,8 +3873,7 @@ video#bgvid {
   text-transform: uppercase;
   font-size: 1.125rem;
   padding: 1.39em 3.06em;
-  -webkit-transition: all .2s ease-in;
-          transition: all .2s ease-in;
+  transition: all .2s ease-in;
   margin: 0 0.83em; }
   @media only screen and (max-width: 37.5rem) {
     .button-cta {
