@@ -33,3 +33,21 @@
 		padding: em-calc(20);
 	}
 }
+
+.scroll-pane {
+	width: 100%;
+	height: 200px;
+	overflow: auto;
+}
+
+.jspVerticalBar {
+	width: 10px;
+}
+
+.jspDrag {
+	background-color: rgba($primary-color, 0.5);
+}
+
+.jspTrack {
+	background-color: lighten(black, 20%);
+}

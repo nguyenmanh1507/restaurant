@@ -58,6 +58,9 @@ var app = (function(document, $) {
 				$('body').toggleClass('no-scroll');
 			});
 
+			// Customize scrollpane
+			$('.scroll-pane').jScrollPane();
+
 		};
 	return {
 		init: _init

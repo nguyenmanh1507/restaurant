@@ -3617,6 +3617,20 @@ p {
     .black-box {
       padding: 1.25em; } }
 
+.scroll-pane {
+  width: 100%;
+  height: 200px;
+  overflow: auto; }
+
+.jspVerticalBar {
+  width: 10px; }
+
+.jspDrag {
+  background-color: rgba(204, 153, 0, 0.5); }
+
+.jspTrack {
+  background-color: #333333; }
+
 .site-header {
   position: fixed;
   left: 0;
