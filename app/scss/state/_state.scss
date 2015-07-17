@@ -1,0 +1,9 @@
+// Disable body scroll when
+// topbar expand
+.no-scroll {
+	overflow: hidden;
+
+	.site-header {
+		background-color: #000000;
+	}
+}

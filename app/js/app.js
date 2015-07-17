@@ -52,6 +52,12 @@ var app = (function(document, $) {
 			  duration: 200
 			});
 
+			// Disable body scroll when
+			// topbar expand
+			$('.toggle-topbar').on('click', function() {
+				$('body').toggleClass('no-scroll');
+			});
+
 		};
 	return {
 		init: _init

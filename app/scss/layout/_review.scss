@@ -8,7 +8,7 @@
 	p {
 		color: $white;
 		font-family: $font-family-serif;
-		font-size: 1.5625rem;
+		font-size: rem-calc(25);
 		font-weight: bold;
 		line-height: 1.8;
 
@@ -23,6 +23,16 @@
 	cite {
 		color: $white;
 		font-style: normal;
-		font-size: 1.125rem;
+		font-size: rem-calc(18);
+	}
+
+	@media only screen and (max-width: $small-breakpoint) {
+		p {
+			font-size: rem-calc(18);
+		}
+
+		cite {
+			font-size: rem-calc(14);
+		}
 	}
 }
