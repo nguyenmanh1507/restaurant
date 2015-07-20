@@ -46,10 +46,14 @@ var app = (function(document, $) {
 			});
 
 			// Headroom
-			var header = document.querySelector('.headroom');
-			var headroom = new Headroom(header);
+			if($('header').hasClass('.headroom')) {
+				
+				var header = document.querySelector('.headroom');
+				var headroom = new Headroom(header);
 
-			headroom.init();
+				headroom.init();
+				
+			}
 
 			// Animate signature
 			new Vivus('signature', {
