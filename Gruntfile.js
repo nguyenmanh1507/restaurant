@@ -147,6 +147,14 @@ module.exports = function(grunt) {
 					'foundation'
 				]
 			}
+		},
+
+		purifycss: {
+			target: {
+				src: ['app/*.html'],
+				css: ['app/css/app.css'],
+				dest: 'app/css/app.css'
+			}
 		}
 
 	});
@@ -158,6 +166,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['compile-sass', 'autoprefixer', 'bower-install', 'connect:app', 'watch']);
 	grunt.registerTask('validate-js', ['jshint']);
 	grunt.registerTask('server-dist', ['connect:dist']);
+
+	grunt.loadNpmTasks('grunt-purifycss');
 	
 	grunt.registerTask('publish', ['compile-sass', 'autoprefixer', 'clean:dist', 'validate-js', 'useminPrepare', 'copy:dist', 'newer:imagemin', 'concat', 'cssmin', 'uglify', 'usemin']);
 
