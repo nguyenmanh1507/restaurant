@@ -20,7 +20,6 @@ var app = (function(document, $) {
 			// SmoothScroll
 			$('.smooth-scroll').find('a').each(function() {
 				var target = $(this).attr('href');
-				console.log(target);
 				$(this).on('click', function(event) {
 					event.preventDefault();
 					$('html, body').animate({
