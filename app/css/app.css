@@ -3598,6 +3598,7 @@ p {
   padding: 4.375rem 0; }
 
 .div-has-bg {
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 6.25rem 0; }
@@ -3634,6 +3635,11 @@ p {
   z-index: 999;
   transition: all 0.2s ease-in; }
 
+.site-header.not-fixed {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 .site-logo {
   margin-top: 0.5rem; }
 
@@ -3666,7 +3672,7 @@ p {
   background: rgba(0, 0, 0, 0.6); }
 
 video#bgvid {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
@@ -3674,7 +3680,7 @@ video#bgvid {
   width: auto;
   height: auto;
   z-index: -100;
-  background: url(images/onion.jpg) no-repeat;
+  background: url('../images/onion.jpg') no-repeat;
   background-size: cover; }
 
 .chef-info {
@@ -3696,8 +3702,8 @@ video#bgvid {
 #signature {
   position: absolute;
   width: 300px;
-  height: 411px;
-  top: -53px;
+  height: 161px;
+  top: 80px;
   left: 60%;
   margin-left: -150px; }
   @media only screen and (max-width: 25em) {

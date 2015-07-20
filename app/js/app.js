@@ -11,6 +11,23 @@ var app = (function(document, $) {
 			_userAgentInit();
 
 			// Custom JS place here
+
+			// FastClick
+			$(function() {
+			  FastClick.attach(document.body);
+			});
+
+			// SmoothScroll
+			$('.smooth-scroll').find('a').each(function() {
+				var target = $(this).attr('href');
+				console.log(target);
+				$(this).on('click', function(event) {
+					event.preventDefault();
+					$('html, body').animate({
+						scrollTop: $(target).offset().top
+					}, 800);
+				});
+			});
 			
 			// Datepicker
 			var now = new Date();
@@ -41,10 +58,14 @@ var app = (function(document, $) {
 			});
 
 			// Headroom
-			var header = document.querySelector('.site-header');
-			var headroom = new Headroom(header);
+			if($('.site-header').hasClass('headroom')) {
 
-			headroom.init();
+				var header = document.querySelector('.headroom');
+				var headroom = new Headroom(header);
+
+				headroom.init();
+				
+			}
 
 			// Animate signature
 			new Vivus('signature', {
@@ -60,6 +81,12 @@ var app = (function(document, $) {
 
 			// Customize scrollpane
 			// $('.scroll-pane').jScrollPane();
+
+			// Parallax BG
+			// Only active stellar on desktop
+			if(!Modernizr.touch) {
+				$.stellar();
+			}
 
 		};
 	return {

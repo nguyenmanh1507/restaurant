@@ -7,6 +7,12 @@
 	transition: all 0.2s ease-in;
 }
 
+.site-header.not-fixed {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 .site-logo {
 	margin-top: 0.5rem;
 }

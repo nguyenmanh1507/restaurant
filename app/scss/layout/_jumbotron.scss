@@ -24,7 +24,7 @@
 
 // Video Background
 video#bgvid {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	min-width: 100%;
@@ -32,8 +32,6 @@ video#bgvid {
 	width: auto;
 	height: auto;
 	z-index: -100;
-	// -webkit-transform: translateX(-50%) translateY(-50%);
-	// transform: translateX(-50%) translateY(-50%);
-	background: url(images/onion.jpg) no-repeat;
+	background: url('../images/onion.jpg') no-repeat;
 	background-size: cover;
 }
