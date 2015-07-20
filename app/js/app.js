@@ -16,6 +16,18 @@ var app = (function(document, $) {
 			$(function() {
 			  FastClick.attach(document.body);
 			});
+
+			// SmoothScroll
+			$('.smooth-scroll').find('a').each(function() {
+				var target = $(this).attr('href');
+				console.log(target);
+				$(this).on('click', function(event) {
+					event.preventDefault();
+					$('html, body').animate({
+						scrollTop: $(target).offset().top
+					}, 800);
+				});
+			});
 			
 			// Datepicker
 			var now = new Date();
