@@ -151,9 +151,9 @@ module.exports = function(grunt) {
 
 		purifycss: {
 			target: {
-				src: ['app/*.html'],
-				css: ['app/css/app.css'],
-				dest: 'app/css/app.css'
+				src: ['app/*.html', 'js/*.js'],
+				css: ['dist/css/app.min.css'],
+				dest: 'dist/css/purestyle.css'
 			}
 		}
 
