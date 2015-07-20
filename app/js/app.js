@@ -46,8 +46,8 @@ var app = (function(document, $) {
 			});
 
 			// Headroom
-			if($('header').hasClass('.headroom')) {
-				
+			if($('.site-header').hasClass('headroom')) {
+
 				var header = document.querySelector('.headroom');
 				var headroom = new Headroom(header);
 
