@@ -46,7 +46,7 @@ var app = (function(document, $) {
 			});
 
 			// Headroom
-			var header = document.querySelector('.site-header');
+			var header = document.querySelector('.headroom');
 			var headroom = new Headroom(header);
 
 			headroom.init();
