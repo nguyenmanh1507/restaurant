@@ -11,6 +11,11 @@ var app = (function(document, $) {
 			_userAgentInit();
 
 			// Custom JS place here
+
+			// FastClick
+			$(function() {
+			  FastClick.attach(document.body);
+			});
 			
 			// Datepicker
 			var now = new Date();
@@ -60,6 +65,12 @@ var app = (function(document, $) {
 
 			// Customize scrollpane
 			// $('.scroll-pane').jScrollPane();
+
+			// Parallax BG
+			// Only active stellar on desktop
+			if(!Modernizr.touch) {
+				$.stellar();
+			}
 
 		};
 	return {

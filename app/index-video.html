@@ -27,7 +27,7 @@
     
     <header class="site-header">
       <div class="row">
-        <div class="medium-3 columns">
+<!--         <div class="medium-3 columns">
 
           <h1 class="site-logo">
             <a href="#">
@@ -36,11 +36,19 @@
             </a>
           </h1>
 
-        </div>
-        <div class="medium-9 columns">
+        </div> -->
+        <div class="small-12 columns">
           
           <nav class="top-bar" data-topbar role="navigation">
             <ul class="title-area">
+              <li class="left">
+                <h1 class="site-logo">
+                  <a href="#">
+                    <span class="show-for-sr">Lambda Restaurant</span>
+                    <img src="images/logo.png" alt="Lambda Restaurant Logo">
+                  </a>
+                </h1>
+              </li>
               <li class="name"><h2 class="show-for-sr">Navigation</h2></li>
                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
               <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -48,7 +56,7 @@
 
             <div class="top-bar-section">
               <!-- Right Nav Section -->
-              <ul class="right">
+              <ul class="right scroll-pane">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Igredients</a></li>
@@ -93,8 +101,8 @@
 
       <!-- Video Backgroud -->
       <video autoplay loop poster="images/onion.jpg" id="bgvid">
-        <source src="video/spaghetti.webm" type="video/webm">
-        <source src="video/spaghetti.mp4" type="video/mp4">
+        <source src="video/seafood.webm" type="video/webm">
+        <source src="video/seafood.mp4" type="video/mp4">
 <!--         <source src="video/seafood.webm" type="video/webm">
         <source src="video/seafood.mp4" type="video/mp4"> -->
       </video>
@@ -119,9 +127,37 @@
           <section class="chef-info">
             <h2 class="deco-heading deco-heading--a">Just the right food</h2>
             <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
+            
+            <div class="chef-avatar">
             <img src="images/chef.jpg" alt="Lambda Chef">
 
-            <!-- Placehoder for sighature -->
+            <svg version="1.1" id="signature" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="270px" height="126px" viewBox="0 0 270 126" enable-background="new 0 0 270 126" xml:space="preserve">
+              <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M81.523,57c13.532,5.8,5.405,9.234,5.405,9.234
+                c-14.792,0.86-65.426,5.422-75.225,12.838c-8.333,6.306-14.29,26.177,0.901,33.834c20.707,10.439,68.694-95.996,64.414-87.213
+                c-4.279,8.784-1.802,59.234,11.036,64.414"/>
+              <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M120.261,63c4.279,8.414-4.505,21.477-4.505,21.477
+                c-23.461,25.199-5.856-24.55-10.36-27.027c-4.505-2.477-7.883,8.784-13.391,20.233c-5.61,11.662,7.76-26.99,0.553-21.585"/>
+              <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M132.198,46.865c-13.45,8.108-16.36,26.714-6.757,26.714
+                c7.658,0,13.977-5.85,13.739-25.138c-0.186-15.069-14.64,3.307-18.919,7.136"/>
+              <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M140.532,1.595c-19.595,11.712-48.832,127.532-7.658,103.153
+                c17.117-10.135,20.3-50.661,6.313-37.387"/>
+              <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M112.034,38.532c2.147-2.928,16.561-7.883,28.273-10.36"/>
+              <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M147.965,40.108c-4.956,2.703-8.52,20.132-7.659,22.892
+                c0.861,2.76,16.892-31,17.342-22.892s-12.72,33.458,1.126,34.685c10.36,0.918,19.82-21.847,14.189-24.55"/>
+              <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M165.306,33.351c-4.505,26.351-2.782,28.858,9.34,15.541"/>
+              <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M193.009,23.441c-13.739,3.153-19.144,30.18-14.64,27.703
+                c4.505-2.477,15.09-14.414,14.64-26.802"/>
+              <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M194.36,23.441c-3.378,21.624-6.212,50.308,7.207,39.559
+                c10.172-8.148,12.838-16.36,14.189-22.441"/>
+              <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M199.766,66.91c-13.063,11.937,51.973,1.047,49.55-15.606
+                c-2.027-13.931-18.103-8.477-20.946-6.917c-12.613,6.917-21.396,32.883-18.468,35.811c2.928,2.928,9.751-11.937,13.805-9.009
+                c4.054,2.928-7.273,2.982-5.697,3.631"/>
+              <path fill="none" stroke="#000000" stroke-miterlimit="10" d="M115.757,118.937c-5.856-2.703,136.486-51.076,139.414-45.358"/>
+            </svg>
+            
+          </div>
+          <!-- /.chef-avatar -->
+            </svg>
 
           </section>
           <!-- /.cheff-info -->
@@ -527,6 +563,7 @@
     <script src="bower_components/jscrollpane/script/mwheelIntent.js"></script>
     <script src="bower_components/jscrollpane/script/jquery.jscrollpane.js"></script>
     <script src="bower_components/jscrollpane/script/jquery.jscrollpane.min.js"></script>
+    <script src="bower_components/stellar/jquery.stellar.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js js/vendor/foundation.min.js -->

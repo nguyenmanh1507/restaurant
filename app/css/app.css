@@ -3598,6 +3598,7 @@ p {
   padding: 4.375rem 0; }
 
 .div-has-bg {
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 6.25rem 0; }
@@ -3674,7 +3675,7 @@ video#bgvid {
   width: auto;
   height: auto;
   z-index: -100;
-  background: url(images/onion.jpg) no-repeat;
+  background: url('../images/onion.jpg') no-repeat;
   background-size: cover; }
 
 .chef-info {
